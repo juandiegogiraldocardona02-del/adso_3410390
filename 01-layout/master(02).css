@@ -2,56 +2,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background: linear-gradient(45deg, rgb(41, 103, 141), rgba(20, 51, 87, 0.726));
-    color: #ffffff;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.925), rgba(10, 10, 26, 0.658));
+    color: #faf6f6;
     display: flex;
     font-family: Poppins, serif;
     justify-content: center;
     min-height: 100dvh;
     align-items: center;
 
-    nav.back {
+    nav.back { /*Boton de regreso*/
         align-items: center;
-        border: 2px solid #fff;
-        border-radius: 50%;
+        border: 2.2px solid #000000;
+        border-radius: 100%;
         display: flex;
         justify-content: center;
         height: 40px;
-        left: 8px;
-        opacity: .6;
+        left: 10px;
+        opacity: 90;
         padding: 0.4rem;
         position: fixed;
-        top: 8px;
-        transform: scale(.8);
-        transition: all 0.4s ease-in;
+        top: 1%;
+        transform: scale(0.8);
+        transition: all 0.2s ease-in;
         width: 40px;
         &:hover {
-            transform: scale(1.1);
-            opacity: 1;
+            transform: scale(1);
+            opacity: 100;
         }
     }
 
-    main {
-        background: linear-gradient(to bottom, rgba(23, 142, 160, 0.712), #e3f9ff9f);
+    main { /*Colores de menu principal*/
+        background: linear-gradient(to bottom, rgba(92, 92, 92, 0.849), #0ca2e746);
         border-radius: 2.4rem;
         padding: 1rem;
         min-width: 380px;
         max-width: 650px;
     }
 
-    /* Main Menu */
+    /*Menu principal linea separador etc ADSO*/
     &.mainmenu {
         main {
             header {
                 h1 {
-                    border-bottom: 2px solid #fffbfb70;
+                    border-bottom: 2px solid #9e9e9e70;
                     font-size: 3rem;
                     text-align: center;
                     font-weight: 450;
                 }
 
                 img {
-                    border: 4px solid #ffffff00;
+                    border: 4px solid #88878700;
                     border-radius: 50%;
                     display: flex;
                     height: 280px;
@@ -101,12 +101,12 @@ body {
                 a:visited, 
                 a:hover, 
                 a:active {
-                    color: rgba(0, 0, 0, 0.007);
+                    color: rgba(211, 70, 70, 0.007);
                 }
 
                 a {
                     align-items: center;
-                    background-color: rgba(4, 56, 133, 0.5);
+                    background-color: rgba(0, 0, 0, 0.5);
                     border-radius: 5rem;
                     display: flex;
                     padding: 0.8rem;
@@ -120,14 +120,14 @@ body {
                         width: 75%;
                     }
 
-                    &:is(:hover) {
-                        background-color: rgba(0, 43, 104, 0.8);
+                    &:is(:hover) { /*color de animacion al poner cursor en opcion*/
+                        background-color: rgba(5, 6, 7, 0.26);
                         transform: scale(1.04);
-                        color: #ddd1d1;
+                        color: #0044ff; /*color de subrayado href de botones */
                     } 
 
-                    span {
-                        background-color: rgb(50, 91, 145); 
+                    span { /*Botones de seleccion con su numeracion*/
+                        background-color: rgb(0, 0, 0); 
                         border-radius: 50%;
                         display: flex;
                         justify-content: center;
@@ -140,7 +140,7 @@ body {
                     }
 
                     &:hover span {
-                        background-color: rgba(0, 0, 0, 0.5);
+                        background-color: rgba(10, 10, 10, 0.5);
                     }
 
                     aside {
