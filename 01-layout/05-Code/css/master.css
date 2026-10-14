@@ -1,0 +1,88 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-primary: white;
+  --color-secondary: #0B1F44;
+  --color-background: #1b4863;
+  --font-headings: "Montserrat", serif;
+  --font-body: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  margin: 0;
+
+  main {
+    min-height: 100dvh;
+
+    header#navbar {
+      background-color: var(--color-secondary);
+      border-radius: 18px;
+      display: flex;
+      justify-content: space-between;
+      height: 90px;
+      border-bottom: 1.1px solid rgba(255, 255, 255, 0.329);
+      align-items: center;
+      padding-inline: 1.5rem;
+      margin-inline: 1.1rem;
+      margin-top: 0.5rem;
+
+      img.logo {
+        height: 60px;
+        width: auto;
+      }
+      
+      nav.options {
+        display: flex;
+        gap: 2rem;
+
+        a:is(:link, :visited) {
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: transform 0.3s ease-in;
+          color: aliceblue;
+
+          &:not(.active):hover {
+            transform: translateY(-2px) scale(1.1);
+          }
+        }
+      }
+    }
+
+    section#about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 5rem;
+      padding-inline: 2rem;
+
+      img.about {
+        width: 518px;
+        height: 288px;
+        object-fit: cover;
+        border-radius: 18px;
+        margin-top: -70px;
+        margin-right: 145px;
+      }
+
+      h2 {
+        font-family: var(--font-headings);
+        color: #ffffff;
+        font-size: 3rem;
+        margin: 0;
+        line-height: 1.1;
+
+        br {
+          display: block;
+          margin-bottom: 0.5rem; 
+        }
+      }
+    }
+  }
+}
